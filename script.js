@@ -63,7 +63,6 @@ function reset(){
   resetBtn.addEventListener('click', () => {
     pixels.forEach((pixel) => {
       pixel.style.background = '#fbfbf8';
-      startDefault();
     });
   })
 }
