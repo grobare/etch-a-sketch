@@ -62,7 +62,8 @@ function reset(){
   const pixels = document.querySelectorAll('.pixel');
   resetBtn.addEventListener('click', () => {
     pixels.forEach((pixel) => {
-      pixel.style.background = '#fbfbf8'
+      pixel.style.background = '#fbfbf8';
+      startDefault();
     });
   })
 }
@@ -87,7 +88,8 @@ function startDefault() {
   const pixels = document.querySelectorAll('.pixel');
   pixels.forEach(pixel => pixel.addEventListener('mouseover', () => {
     pixel.style.background = '#C0C0C0';
-  }));
-};
+    
+  }))
+}
 //set default gray on load
 window.addEventListener('load', startDefault)
